@@ -13,3 +13,5 @@ This is my portfolio website!
 - [Data Source](#data-source)
 - [Stages](#stages)
 - [Design](#design)
+  - [Mockup](#mockup)
+  - [Tools](#tools)
