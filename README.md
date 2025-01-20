@@ -6,3 +6,10 @@ This is my portfolio website!
 # Header
 
 ## SubHeader
+
+# Table of Contents
+
+- [Objectives](#objective)
+- [Data Source](#data-source)
+- [Stages](#stages)
+- [Design](#design)
