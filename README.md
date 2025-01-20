@@ -16,4 +16,4 @@ This is my portfolio website!
   - [Mockup](#mockup)
   - [Tools](#tools)
 
-![random_example](assets/images/profile_pic.jpg)
+![random_example](assets/images/PowerBiDashboard.png)
