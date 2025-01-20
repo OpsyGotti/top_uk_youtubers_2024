@@ -35,4 +35,6 @@ SeLECT
 FROM 
 	youtube_data_from_python;
 
- 
+ | Col1 | Col2 | Col3|
+ | -----|------|-----|
+ |Dan   |Foster|£5.00|	
