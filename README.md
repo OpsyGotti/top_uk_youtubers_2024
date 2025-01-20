@@ -3,11 +3,6 @@
 ![Excel_to_PowerBI](assets/images/kaggle_to_powerbi.gif)
 
 
-This is my portfolio website!
-
-# Header
-
-## SubHeader
 
 # Table of Contents
 
@@ -17,6 +12,42 @@ This is my portfolio website!
 - [Design](#design)
   - [Mockup](#mockup)
   - [Tools](#tools)
+- [Development](#development)
+  - [Pseudocode](pseudocode)
+  - [Data Exploration](data-exploration)
+  - [Data Cleaning](#datacleaning)
+  - [Transform the Data](#tranform-the-Data)
+  - [Create the SQL View](create-the-sql-view)
+- [Testing](#testing)
+  -[Data Quality Tests](#data-quality-tests)
+- [Visualization](#visualization)
+  -[Results](#results)
+  -[DAX Measures](#dax-measures)
+- [Analysis](#analysis)
+  -[Findings](#findings)
+  -[Validation](#validation)
+  -[Discovery](#discovery)
+- [Recommendation](#recommendations)
+  -[Potential ROI](#potential-courses-of-action)
+- [Conclusion](#conclusion)
+
+
+# Objectives
+
+- What is the primary challenge?
+
+The Head of Marketing aims to identify the top YouTubers of 2024 to plan effective marketing campaigns for the year.
+
+
+What is the best approach?
+
+- What data is needed to achieve our objective?
+
+We need data on the top UK YouTubers in 2024 that includes their 
+- channel names
+- total subscribers
+- total views
+- total videos uploaded
 
 ![random_example](assets/images/PowerBiDashboard.png)
 
