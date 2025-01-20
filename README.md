@@ -17,3 +17,24 @@ This is my portfolio website!
   - [Tools](#tools)
 
 ![random_example](assets/images/PowerBiDashboard.png)
+
+
+```sql
+
+```sql
+
+SeLECT 
+	*
+FROM 
+	youtube_data_from_python;
+
+
+SeLECT 
+	NOMBRE,
+	total_subscribers,
+	total_views,
+	total_videos
+FROM 
+	youtube_data_from_python;
+
+ ---
