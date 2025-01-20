@@ -19,7 +19,6 @@ This is my portfolio website!
 ![random_example](assets/images/PowerBiDashboard.png)
 
 
-```sql
 
 ```sql
 
@@ -27,7 +26,7 @@ SeLECT
 	*
 FROM 
 	youtube_data_from_python;
-
+```sql
 
 SeLECT 
 	NOMBRE,
