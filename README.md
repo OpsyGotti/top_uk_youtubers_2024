@@ -34,6 +34,7 @@ SeLECT
 	total_videos
 FROM 
 	youtube_data_from_python;
+```
 
  | Col1 | Col2 | Col3|
  | ---|---|---|
