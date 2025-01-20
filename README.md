@@ -26,7 +26,6 @@ SeLECT
 	*
 FROM 
 	youtube_data_from_python;
-```sql
 
 SeLECT 
 	NOMBRE,
