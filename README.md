@@ -15,3 +15,5 @@ This is my portfolio website!
 - [Design](#design)
   - [Mockup](#mockup)
   - [Tools](#tools)
+
+![random_example](assets/images/profile_pic.jpg)
