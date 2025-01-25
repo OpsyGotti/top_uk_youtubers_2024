@@ -7,6 +7,7 @@
 # Table of Contents
 
 - [Objective](#objective)
+  -[User Story](#user-story)
 - [Data Source](#data-source)
 - [Stages](#stages)
 - [Design](#design)
@@ -38,8 +39,24 @@
 
 The Head of Marketing aims to identify the top YouTubers of 2024 to plan effective marketing campaigns for the year.
 
+- What is the best approach?
 
-What is the best approach?
+To build a dashboard that delivers insights into the top UK YouTubers in 2024, including their
+
+- total views 
+- subscribers
+- total number of videos
+- metrics for engagement
+  
+This will assist the marketing team in choosing which YouTubers to work with on their campaigns.
+
+## User Story
+
+As the Head of Marketing, I want to use a dashboard that analyses YouTube channel data in the UK .
+
+This dashboard should allow me to identify the top performing channels based on metrics like subscriber base and average views.
+
+With this information, I can make more informed decisions about which Youtubers are right to collaborate with, and therefore maximize how effective each marketing campaign is.
 
 # Data Source
 
@@ -61,12 +78,54 @@ The data is sourced from Kaggle (an Excel extract), [see here to find it.](https
 - Testing
 - Analysis 
  
+# Design
 
+## Dashboard requirements
+
+- What should the dashboard provide based on the specifications provided?
+  
+To determine what the dashboard should include, we first need to identify the key questions it needs to address:
+
+1. Who are the top 10 YouTubers with the most subscribers?
+2. Which 3 channels have uploaded the most videos?
+3. Which 3 channels have the most views?
+4. Which 3 channels have the highest average views per video?
+5. Which 3 channels have the highest views per subscriber ratio?
+6. Which 3 channels have the highest subscriber engagement rate per video uploaded?
+
+For the time being, these are some of the questions we must address; but, as our analysis progresses, this may change.
+
+## Dashboard mockup
+
+- What the dashboard will look like?
+
+The following data visuals will be most appropriate in providing solutions to the requirements:
+
+1. Table
+2. Treemap
+3. Scorecards
+4. Horizontal bar chart
 
 
 ![random_example](assets/images/PowerBiDashboard.png)
 
+## Tools
 
+ | Tool| Purpose|
+ | ---|---|
+ | Excel | Exploring the data |
+ | SQL Server | Cleaning, testing and analyzing the data |
+ | Power BI | Visualizing the data via interactive dashboards |
+ | GitHub | Hosting the project documentation and version control |
+ | Mokkup AI | Designing the wireframe/mockup of the dashboard |
+
+
+# Development
+
+## Pseudocode
+
+- 
+  
 
 ```sql
 
