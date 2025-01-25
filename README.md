@@ -268,7 +268,6 @@ WHERE
 
 ![data_type_check](assets/images/data_type_check.png)
 
-
 ```sql
 
 SeLECT 
