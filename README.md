@@ -268,6 +268,26 @@ WHERE
 
 ![data_type_check](assets/images/data_type_check.png)
 
+## Duplicate count check
+
+```sql
+/*
+Each record must be unique in the dataset (duplicate count check)
+
+*/
+SELECT
+	channel_name,
+	COUNT(*) as duplicate_count
+FROM 
+	view_uk_youtubers_2024
+GROUP BY
+	channel_name
+HAVING 
+	COUNT(*) > 1;
+
+```
+![duplicate_records_check](assets/images/duplicate_record_check.png)
+
 ```sql
 
 SeLECT 
