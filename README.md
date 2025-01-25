@@ -49,6 +49,19 @@ We need data on the top UK YouTubers in 2024 that includes their
 - total views
 - total videos uploaded
 
+- Where is the data coming from? 
+The data is sourced from Kaggle (an Excel extract), [see here to find it.](https://www.kaggle.com/datasets/anubhavbharti/top-100-youtube-channels-2024-12-countries?select=UK_Top100_YoutubeChannels.csv)
+
+# Stages
+
+- Design
+- Developement
+- Testing
+- Analysis 
+ 
+
+
+
 ![random_example](assets/images/PowerBiDashboard.png)
 
 
