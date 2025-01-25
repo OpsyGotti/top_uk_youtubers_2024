@@ -6,7 +6,7 @@
 
 # Table of Contents
 
-- [Objectives](#objective)
+- [Objective](#objective)
 - [Data Source](#data-source)
 - [Stages](#stages)
 - [Design](#design)
