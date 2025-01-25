@@ -32,7 +32,7 @@
 - [Conclusion](#conclusion)
 
 
-# Objectives
+# Objective
 
 - What is the primary challenge?
 
@@ -40,6 +40,8 @@ The Head of Marketing aims to identify the top YouTubers of 2024 to plan effecti
 
 
 What is the best approach?
+
+# Data Source
 
 - What data is needed to achieve our objective?
 
