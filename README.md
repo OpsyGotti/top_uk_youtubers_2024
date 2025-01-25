@@ -192,12 +192,55 @@ SELECT
 FROM youtube_data_from_python;
 ```
 
+## Create the SQL view
+
+```sql
+/*
+# 1. Create a view to store the transformed data
+# 2. Cast the extracted channel name as VARCHAR(100) and elect the required columns from the top_uk_youtubers_2024 SQL table 
+*/
+
+-- 1. 
+CREATE VIEW view_uk_youtubers_2024  AS
+
+
+-- 2.
+SELECT 
+	CAST(SUBSTRING(NOMBRE, 1,CHARINDEX('@', NOMBRE) -1) AS VARCHAR(100)) AS channel_name,
+	total_subscribers,
+	total_views,
+	total_videos
+FROM
+	youtube_data;
+
+```
+
+# Testing
+
+The intention here is to ensure data quality and perform validation checks. Below are the data quality checks undertaken:
+
+## Row count check
+
+```sql
+/*
+# The data needs to be 100 records of Youtube channels (row count test)
+*/
+
+SELECT 
+	COUNT(*) as no_of_rows
+FROM 
+	youtube_data
+```
+![random_example](![random_example](assets/images/PowerBiDashboard.png))
+
+
+
 ```sql
 
 SeLECT 
 	*
 FROM 
-	youtube_data_from_python;
+	youtube_data;
 
 SeLECT 
 	NOMBRE,
