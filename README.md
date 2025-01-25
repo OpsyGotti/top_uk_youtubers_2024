@@ -265,6 +265,7 @@ FROM
 WHERE
 	TABLE_NAME = 'view_uk_youtubers_2024';
 ```
+
 ![data_type_check](assets/images/data_type_check.png)
 
 
