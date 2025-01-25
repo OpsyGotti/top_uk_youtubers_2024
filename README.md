@@ -231,7 +231,7 @@ SELECT
 FROM 
 	youtube_data
 ```
-![random_example](assets/images/PowerBiDashboard.png)
+![random_example](assets/images/Row count check.png)
 
 
 
