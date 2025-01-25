@@ -231,8 +231,41 @@ SELECT
 FROM 
 	youtube_data
 ```
-![random_example](assets/images/Row_count_check.png)
+![row_count_check](assets/images/Row_count_check.png)
 
+## Column check
+```sql
+-- 2. Column count check
+/*
+
+Confirm the total number of columns/fields in the SQL view
+*/
+
+SELECT 
+	COUNT(*) AS column_count
+FROM 
+	INFORMATION_SCHEMA.COLUMNS
+WHERE 
+	TABLE_NAME = 'view_uk_youtubers_2024';
+```
+![colum_check](assets/images/Column_check.png)
+
+## Data type check
+
+```sql
+/* 
+Check the data types of each column from the view the view by checking the INFORMATION scheme view
+*/
+
+SELECT
+	COLUMN_NAME,
+	DATA_TYPE
+FROM
+	INFORMATION_SCHEMA.COLUMNS
+WHERE
+	TABLE_NAME = 'view_uk_youtubers_2024';
+```
+![data_type_check](assets/images/data_type_check.png)
 
 
 ```sql
