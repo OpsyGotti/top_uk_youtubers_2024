@@ -22,7 +22,7 @@
 - [Testing](#testing)
   -[Data Quality Tests](#data-quality-tests)
 - [Visualization](#visualization)
-  -[Results](#results)
+  -[PowerBI Result](#powerbi-results)
   -[DAX Measures](#dax-measures)
 - [Analysis](#analysis)
   -[Findings](#findings)
@@ -346,7 +346,7 @@ RETURN finalAvgViewsPerVideo
 
 ```
 
-### 5. Subsriber Engagement Rate
+### 5. Subscriber Engagement Rate
 
 ```sql
 
@@ -358,28 +358,88 @@ VAR subscriberEngRate = DIVIDE(sumOfTotalSubscribers, sumOfTotalVideos, BLANK())
 RETURN subscriberEngRate
 
 ```
-
-
-
-
-
+### 6. Views per subscriber
 
 ```sql
 
-SeLECT 
-	*
-FROM 
-	youtube_data;
+View per Subscriber = 
+VAR sumOfTotalViews = SUM(view_uk_youtubers_2024[total_views])
+VAR sumOfTotalSubscribers = SUM(view_uk_youtubers_2024[total_subscribers])
+var viewsPerSubscribers = DIVIDE(sumOfTotalViews, sumOfTotalSubscribers, BLANK())
 
-SeLECT 
-	NOMBRE,
-	total_subscribers,
-	total_views,
-	total_videos
-FROM 
-	youtube_data_from_python;
-```
+RETURN viewsPerSubscribers
 
- | Col1 | Col2 | Col3|
- | ---|---|---|
- |Dan   |Foster|£5.00|	
+# Analysis
+
+## Findings
+
+For this analysis, below are metrics to be extracted from the report to get the results required for the marketing client -
+
+1. Which ten YouTubers have the most subscribers overall?
+2. Which three channels have the most videos uploaded?
+3. What are the top three channels in terms of views?
+4. Which three channels receive the most views on average for each video?
+5. What are the top three channels in terms of views per subscriber?
+6. For each published video, which three channels have the highest subscriber engagement rate?
+
+### 1. Which ten YouTubers have the most subscribers overall?
+
+ | Rank| Channel Name| Subscribers (M) |
+ | ---|---| ---|
+ | 1 | NoCopy | 33.60 |
+ | 2 | DanTDM | 28.6 |
+ | 3 | Dan Rhodes | 26.5 |
+ | 4 | Miss Katy | 24.5 |
+ | 5 | Mister Max | 24.4 |
+ | 6 | KSI | 24.1 |
+ | 7 | Jelly | 23.5 |
+ | 8 | Dua Lipa | 23.3 |
+ | 9 | Sidemen | 21.0 |
+ |10 | Ali-A | 18.9 |
+
+### 2. Which three channels have the most videos uploaded?
+
+ | Rank| Channel Name| Views Uploaded |
+ | ---|---| ---|
+ | 1 | 24 News HD  | 165,103 |
+ | 2 | Sky News  | 46,009 |
+ | 3 | BBC News  | 40,179 |
+
+### 3. What are the top three channels in terms of views?
+
+| Rank| Channel Name| Total Views (B) |
+ | ---|---| ---|
+ | 1 | DanTDM  | 19.78 |
+ | 2 | Dan Rhodes  | 18.56 |
+ | 3 | BBC News  | 15.97 |
+
+### 4. Which three channels receive the most views on average for each video?
+
+ | Rank| Channel Name| Average Views per Video (M) |
+ | ---|---| ---|
+ | 1 | Mark Ronson  | 332.79 |
+ | 2 | Jessie J  | 59.77 |
+ | 3 | Little Mix  | 57.62 |
+
+5. What are the top three channels in terms of views per subscriber?
+
+ | Rank| Channel Name| Views per Subscriber |
+ | ---|---| ---|
+ | 1 | GRM Daily  | 1,185.79 |
+ | 2 | Nickelodeon UK  | 1,061.04 |
+ | 3 | DisneyJunior UK  | 1,031.97 |
+
+6. For each published video, which three channels have the highest subscriber engagement rate?
+
+ | Rank| Channel Name| Subscriber Engagement Ratio |
+ | ---|---| ---|
+ | 1 | Mark Rondon  | 343,000.00 |
+ | 2 | Jessie J | 110,416.67 |
+ | 3 | Dua Lipa  | 104,954.95 |
+
+### Notes
+
+The parameters that are crucial to generating the anticipated return on investment for our marketing client—the YouTube channels with the highest
+- total views
+- subscribers
+- videos uploaded
