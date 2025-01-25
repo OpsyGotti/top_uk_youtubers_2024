@@ -7,7 +7,7 @@
 # Table of Contents
 
 - [Objective](#objective)
-  -[User Story](#user-story)
+  - [User Story](#user-story)
 - [Data Source](#data-source)
 - [Stages](#stages)
 - [Design](#design)
@@ -124,8 +124,73 @@ The following data visuals will be most appropriate in providing solutions to th
 
 ## Pseudocode
 
-- 
-  
+- The steps to be developing this solution from beginning to the end.
+
+1. Get the data
+2. Examine the data in Excel.
+3. Load the data to SQL Server.
+4. Use SQL to clean and test data.
+5. Visualize the data in PowerBI.
+6. Generate findings based on the insights
+7. Produce the documentation, including commentary.
+8. Publish the data in GitHub Pages.
+
+## Data Exploration
+
+At this stage, the data obtained is scanned for any errors, weird and corrupted characters, inconsistences e.t.c.
+
+1. There are at least 4 columns that contain the data we need for this analysis, which signals we have everything we need from the file without needing to contact the 	client for any more data.
+2. The first column contains the channel ID with what appears to be channel IDS, which are separated by a @ symbol - we need to extract the channel names from this.
+3. Some of the cells and header names are in a different language - we need to confirm if these columns are needed, and if so, we need to address them.
+4. We have more data than we need, so some of these columns would need to be removed
+
+## Data Cleaning
+
+How should the cleaned data be structured? (What should it contain, and what limitations should be applied?). Te goal of data cleaning is to ensure the dataset is properly organized and analysis-ready.
+
+The cleaned data should meet the following criteria and constraints:
+- Only relevant columns should be retained.
+- All data types should be appropriate for the contents of each column.
+- No column should contain null values, indicating complete data for all records.
+
+Below is a table outlining the constraint on our cleaned dataset:
+
+ | Property| Description |
+ | ---|---|
+ | ENumber of Rows | 100 |
+ | Number of Columns | 4 |
+
+And here is a tabular representation of the expected schema for the clean data:
+
+ | Column Name| Data Type| Nullable |
+ | ---|---| ---|
+ | channel_name | VARCHAR | NO |
+ | total_subscribers | INTEGER | NO |
+ | total_views | INTEGER | NO |
+ | total_videos | INTEGER | NO |
+
+Therefore, the next step is to clean and shape the data into the preferred format as follows:
+
+1. Just choose the columns you need, and eliminate any redundant ones.
+2. Take the names of YouTube channels out of the first column.
+3. Use aliases to change columns' names.
+
+## Tranform the Data
+
+```sql
+
+/* 
+1. Set the preferred columns
+2. Extract channel name from the 'NOMBRE' column.
+*/
+
+SELECT 
+	CAST(SUBSTRING(NOMBRE, 1,CHARINDEX('@', NOMBRE) -1) AS VARCHAR(100)) AS channel_name, 
+	total_subscribers,
+	total_views,
+	total_videos
+FROM youtube_data_from_python;
+```
 
 ```sql
 
