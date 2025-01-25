@@ -296,7 +296,17 @@ HAVING
 
 ![visualization](assets/images/visualization.gif)
 
+## DAX Measures
 
+1. Total Subscribers (M)
+```pbix
+Total Subscriber (M) = 
+VAR million = 1000000
+VAR sumOfSubscribers = SUM(view_uk_youtubers_2024[total_subscribers])
+VAR totalSubscribers = DIVIDE (sumOfSubscribers, million)
+
+RETURN totalSubscribers
+```
 
 
 
