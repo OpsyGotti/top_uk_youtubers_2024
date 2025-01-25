@@ -422,7 +422,7 @@ For this analysis, below are metrics to be extracted from the report to get the 
  | 2 | Jessie J  | 59.77 |
  | 3 | Little Mix  | 57.62 |
 
-5. What are the top three channels in terms of views per subscriber?
+### 5. What are the top three channels in terms of views per subscriber?
 
  | Rank| Channel Name| Views per Subscriber |
  | ---|---| ---|
@@ -430,7 +430,7 @@ For this analysis, below are metrics to be extracted from the report to get the 
  | 2 | Nickelodeon UK  | 1,061.04 |
  | 3 | DisneyJunior UK  | 1,031.97 |
 
-6. For each published video, which three channels have the highest subscriber engagement rate?
+### 6. For each published video, which three channels have the highest subscriber engagement rate?
 
  | Rank| Channel Name| Subscriber Engagement Ratio |
  | ---|---| ---|
