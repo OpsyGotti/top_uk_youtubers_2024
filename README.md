@@ -369,6 +369,7 @@ var viewsPerSubscribers = DIVIDE(sumOfTotalViews, sumOfTotalSubscribers, BLANK()
 
 RETURN viewsPerSubscribers
 
+```
 # Analysis
 
 ## Findings
