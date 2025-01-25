@@ -288,6 +288,25 @@ HAVING
 ```
 ![duplicate_records_check](assets/images/duplicate_record_check.png)
 
+# Visualization
+
+## PowerBI Result
+
+- Dashboard
+
+![visualization](assets/images/visualization.gif)
+
+
+
+
+
+
+
+
+
+
+
+
 ```sql
 
 SeLECT 
